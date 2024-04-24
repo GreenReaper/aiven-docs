@@ -1,5 +1,5 @@
 ---
-title: Create an AWS custom cloud in Aiven
+title: Create a custom cloud in Aiven
 sidebar_label: Create custom clouds
 ---
 
@@ -57,7 +57,7 @@ contacts for your custom cloud.
     eligible for activating BYOC.
 
     :::note
-    Check out [Aiven support tiers](https://aiven.io/support-services) and
+    See [Aiven support tiers](https://aiven.io/support-services) and
     [Aiven responsibility matrix](https://aiven.io/responsibility-matrix) for BYOC.
     Contact the [sales team](mailto:sales@aiven.io) to learn more or upgrade your support
     tier.
@@ -68,7 +68,7 @@ contacts for your custom cloud.
     [Enable bring your own cloud (BYOC) with Aiven](/docs/platform/howto/byoc/enable-byoc).
 -   BYOC is supported with the
     [standard deployment](/docs/platform/concepts/byoc#byoc-deployment) model only.
--   Only organization's administrators can create custom clouds.
+-   Only [super admins](/docs/platform/howto/make-super-admin) can create custom clouds.
 
 ## Prerequisites {#byoc-prerequisites}
 
@@ -77,7 +77,7 @@ contacts for your custom cloud.
 -   You have an active account with your cloud provider.
 -   You have access to [Aiven Console](https://console.aiven.io/)
     ([to integrate with AWS](/docs/platform/howto/byoc/create-custom-cloud#create-cloud-aws)).
--   You have administrator's role in your Aiven organization
+-   You have the [super admin](/docs/platform/howto/make-super-admin) role in your Aiven organization
     ([to integrate with AWS](/docs/platform/howto/byoc/create-custom-cloud#create-cloud-aws)).
 -   You have Terraform installed
     ([to integrate with AWS](/docs/platform/howto/byoc/create-custom-cloud#create-cloud-aws)).
@@ -488,7 +488,7 @@ In the **Create custom cloud** wizard:
 
     -   Custom cloud name
 
-    -   Cloud provider (AWS only)
+    -   Cloud provider
 
     -   Region
 
@@ -526,6 +526,17 @@ In the **Create custom cloud** wizard:
             blocks of VPCs you plan to peer your BYOC VPC with. You
             cannot change the BYOC VPC CIDR block after your custom
             cloud is created.
+
+    -   Deployment model: Choose between
+        [the private architecture and the public architecture](/docs/platform/concepts/byoc).
+
+        - Private model routes traffic through a proxy for additional security utilizing
+          a bastion host physically separated from the Aiven services.
+        - Public model allows the Aiven control plane to connect to the service nodes
+          via the public Internet.
+
+    -   Infrastructure tags: Select key-value pairs to
+        [tag your custom cloud resources](/docs/platform/howto/byoc/tag-custom-cloud-resources).
 
 1.  Select **Next**.
 
@@ -685,7 +696,7 @@ cloud. See the guidelines on how to use the `destroy` command in
 
 To create a service in [Aiven Console](https://console.aiven.io/) in your new custom
 cloud, follow the guidelines in
-[Create a new service](/docs/platform/howto/create_new_service).
+[Create a service](/docs/platform/howto/create_new_service).
 
 When creating a service in the [Aiven Console](https://console.aiven.io/), at the
 **Select service region** step, select **Custom clouds** from the available regions.
@@ -702,4 +713,5 @@ information.
 -   [Enable bring your own cloud (BYOC)](/docs/platform/howto/byoc/enable-byoc)
 -   [Assign a project to your custom cloud](/docs/platform/howto/byoc/assign-project-custom-cloud)
 -   [Add customer's contact information for your custom cloud](/docs/platform/howto/byoc/add-customer-info-custom-cloud)
+-   [Tag custom cloud resources](/docs/platform/howto/byoc/tag-custom-cloud-resources)
 -   [Rename your custom cloud](/docs/platform/howto/byoc/rename-custom-cloud)

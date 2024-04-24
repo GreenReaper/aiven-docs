@@ -19,7 +19,7 @@ specified.
 
 ## Prerequisites
 
--   Administrator's role for your Aiven organization
+-   [Super admin](/docs/platform/howto/make-super-admin) role for your Aiven organization
 -   At least one
     [custom cloud created](/docs/platform/howto/byoc/create-custom-cloud) in your Aiven organization
 -   Access to [Aiven Console](https://console.aiven.io/)
@@ -28,8 +28,7 @@ specified.
 
 1.  Log in to [Aiven Console](https://console.aiven.io/) as an
     administrator.
-1.  Select the organization you want to use from the dropdown menu in
-    the top right corner.
+1.  Select an organization from the menu in the top right corner.
 1.  From the top navigation bar, select **Admin**.
 1.  From the left sidebar, select **Bring your own cloud**.
 1.  In the **Bring your own cloud** view, select one of the clouds
@@ -47,8 +46,7 @@ Preview the updated name of your cloud:
 
 1.  Log in to [Aiven Console](https://console.aiven.io/) as an
     administrator.
-1.  Select the organization you want to use from the dropdown menu in
-    the top right corner.
+1.  Select an organization from the menu in the top right corner.
 1.  From the top navigation bar, select **Admin**.
 1.  From the left sidebar, select **Bring your own cloud**.
 1.  In the **Bring your own cloud** view, see the list of the available
@@ -60,3 +58,4 @@ Preview the updated name of your cloud:
 -   [Create a custom cloud in Aiven](/docs/platform/howto/byoc/create-custom-cloud)
 -   [Assign a project to your custom cloud](/docs/platform/howto/byoc/assign-project-custom-cloud)
 -   [Add customer's contact information for your custom cloud](/docs/platform/howto/byoc/add-customer-info-custom-cloud)
+-   [Tag custom cloud resources](/docs/platform/howto/byoc/tag-custom-cloud-resources)

@@ -24,13 +24,13 @@ call, we make sure BYOC can address them, and we check your environment
 eligibility for the feature.
 
 :::important
-Before getting down to enabling BYOC, check the availability of the
-feature in
-[Who is eligible for BYOC](/docs/platform/concepts/byoc#eligible-for-byoc), make sure
-you understand all the
-[limitations](/docs/platform/howto/byoc/enable-byoc#byoc-enable-limitations),
-and meet all the
-[prerequisites](/docs/platform/howto/byoc/enable-byoc#byoc-enable-prerequisites).
+Before enabling BYOC, check:
+
+- Availability of the feature in
+  [Who is eligible for BYOC](/docs/platform/concepts/byoc#eligible-for-byoc)
+- Feature [limitations](/docs/platform/howto/byoc/enable-byoc#byoc-enable-limitations)
+- Feature [prerequisites](/docs/platform/howto/byoc/enable-byoc#byoc-enable-prerequisites)
+
 :::
 
 ## Limitations {#byoc-enable-limitations}
@@ -39,11 +39,11 @@ and meet all the
     eligible for activating BYOC.
 -   BYOC is supported with the
     [standard deployment](/docs/platform/concepts/byoc#byoc-deployment) model only.
--   Only organization's administrators can request enabling BYOC.
+-   Only [super admins](/docs/platform/howto/make-super-admin) can request enabling BYOC.
 
 ## Prerequisites {#byoc-enable-prerequisites}
 
--   Administrator's role for your Aiven organization
+-   [Super admin](/docs/platform/howto/make-super-admin) role for your Aiven organization
 -   Access to [Aiven Console](https://console.aiven.io/)
 -   Active account with your cloud provider
 
@@ -52,8 +52,7 @@ and meet all the
 1.  Log in to [Aiven Console](https://console.aiven.io/) as an
     administrator.
 
-1.  Select the organization you want to use from the dropdown menu in
-    the top right corner.
+1.  Select an organization from the menu in the top right corner.
 
 1.  From the top navigation bar, select **Admin**.
 
@@ -62,17 +61,17 @@ and meet all the
 1.  In the **Bring your own cloud** view, select **Contact us**.
 
 1.  In the **Contact us** window, enter your email address and country.
-    Select the cloud provider you want to use, add any other information
+    Select a cloud provider, add any other information
     you think might be relevant, and select **Confirm**.
 
     The scheduling assistant shows up so that you can schedule a short
     call with the Aiven sales team to proceed on your BYOC enablement
     request.
 
-1.  Using the scheduling assistant, select a date and time when you want
-    to talk to our sales team to share your requirements and make sure
-    BYOC suits your needs. Confirm the selected time, make sure you add
-    the call to your calendar, and close the the scheduling assistant.
+1.  Using the scheduling assistant, select a date and time when to talk to our sales team
+    to share your requirements and make sure BYOC suits your needs. Confirm the selected
+    time, make sure you add the call to your calendar, and close the the scheduling
+    assistant.
 
 1.  Join the scheduled call with our sales team to follow up with them
     on enabling BYOC in your environment.
@@ -95,4 +94,5 @@ clouds:
 -   [About bring your own cloud (BYOC)](/docs/platform/concepts/byoc)
 -   [Assign a project to your custom cloud](/docs/platform/howto/byoc/assign-project-custom-cloud)
 -   [Add customer's contact information for your custom cloud](/docs/platform/howto/byoc/add-customer-info-custom-cloud)
+-   [Tag custom cloud resources](/docs/platform/howto/byoc/tag-custom-cloud-resources)
 -   [Rename your custom cloud](/docs/platform/howto/byoc/rename-custom-cloud)

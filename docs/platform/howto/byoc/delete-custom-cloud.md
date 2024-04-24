@@ -26,7 +26,7 @@ them earlier, you're advised to do that if deleting your cloud.
 
 ## Prerequisites
 
--   Administrator's role for your Aiven organization
+-   [Super admin](/docs/platform/howto/make-super-admin) role for your Aiven organization
 -   At least one
     [custom cloud created](/docs/platform/howto/byoc/create-custom-cloud) in your Aiven organization
 -   No running services that uses a custom cloud to be deleted
@@ -36,16 +36,14 @@ them earlier, you're advised to do that if deleting your cloud.
 
 1.  Log in to [Aiven Console](https://console.aiven.io/) as an
     administrator.
-1.  Select the organization you want to use from the dropdown menu in
-    the top right corner.
+1.  Select an organization from the menu in the top right corner.
 1.  From the top navigation bar, select **Admin**.
 1.  From the left sidebar, select **Bring your own cloud**.
 1.  In the **Bring your own cloud** view, select one of the clouds
     available on the list.
 1.  In the selected cloud's page, use the **Actions** menu in
     the top right corner to select **Delete**.
-1.  Make sure you understand the impact and, if so, confirm that you
-    want to delete the cloud by selecting **Delete** in the **Warning**
+1.  Confirm that you intend to delete the cloud by selecting **Delete** in the **Warning**
     window.
 
 Your custom cloud has been deleted.
@@ -65,8 +63,7 @@ To ensure a cloud was successfully deleted:
 
 1.  Log in to [Aiven Console](https://console.aiven.io/) as an
     administrator.
-1.  Select the organization you want to use from the dropdown menu in
-    the top right corner.
+1.  Select an organization from the menu in the top right corner.
 1.  From the top navigation bar, select **Admin**.
 1.  From the left sidebar, select **Bring your own cloud**.
 1.  In the **Bring your own cloud** view, see the list of the available
@@ -80,3 +77,4 @@ To ensure a cloud was successfully deleted:
 -   [Create a custom cloud in Aiven](/docs/platform/howto/byoc/create-custom-cloud)
 -   [Assign a project to your custom cloud](/docs/platform/howto/byoc/assign-project-custom-cloud)
 -   [Add customer's contact information for your custom cloud](/docs/platform/howto/byoc/add-customer-info-custom-cloud)
+-   [Tag custom cloud resources](/docs/platform/howto/byoc/tag-custom-cloud-resources)
